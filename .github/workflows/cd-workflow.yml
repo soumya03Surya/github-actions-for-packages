@@ -62,6 +62,6 @@ jobs:
       with:
         username: soumya03surya
         password: ${{secrets.GITHUB_TOKEN}}
-        registry: https://ghcr.io
+        registry: docker.pkg.github.com
         repository: soumya03surya/github-actions-for-packages/tic-tac-toe
         tag_with_sha: true
