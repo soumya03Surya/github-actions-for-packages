@@ -60,7 +60,7 @@ jobs:
     - name: Build container image
       uses: docker/build-push-action@v1
       with:
-        username: ${{github.actor}}
+        username: soumya03surya@github.com
         password: ${{secrets.GITHUB_TOKEN}}
         registry: docker.pkg.github.com
         repository: github-actions-for-packages/tic-tac-toe
