@@ -49,7 +49,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: test
     name: Docker Build, Tag, Push
-
     steps:
     - name: Checkout
       uses: actions/checkout@v1
@@ -61,8 +60,8 @@ jobs:
     - name: Build container image
       uses: docker/build-push-action@v1
       with:
-        username: ${{github.actor}}
+        username: soumya03surya
         password: ${{secrets.GITHUB_TOKEN}}
         registry: docker.pkg.github.com
-        repository: soumya03Surya/github-actions-for-packages/tic-tac-toe
+        repository: soumya03surya/github-actions-for-packages/tic-tac-toe
         tag_with_sha: true
